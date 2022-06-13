@@ -1,0 +1,50 @@
+/* These styles will all be purged */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply transition-all duration-200 hover:shadow-md p-2 border rounded-lg disabled:opacity-50;
+}
+
+.btn.primary {
+  @apply bg-blue-800 text-white border-blue-800 hover:bg-blue-900;
+}
+
+.btn.error {
+  @apply bg-red-800 text-white border-red-800 hover:bg-red-900;
+}
+
+.btn.btn-full {
+  @apply w-full block;
+}
+
+.message {
+  @apply block text-center border text-sm rounded-lg;
+}
+
+.message.error {
+  @apply border-red-500 p-2 text-red-500;
+}
+
+.message.success {
+  @apply border-green-500 p-2 text-green-500;
+}
+
+/* These styles will not be purged */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
