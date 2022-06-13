@@ -40,7 +40,7 @@ function Layout({ children }: Props): JSX.Element {
   return (
     <React.Fragment>
       <Head>
-        <title>CRM - Next Application</title>
+        <title>Basic CRM - Next Application</title>
       </Head>
       <div className="min-h-screen dark:text-white-100 dark:bg-black-800">
         {content}
